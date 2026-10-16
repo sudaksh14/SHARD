@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "TODO: citation details will be added once the paper link is available."
+title: "SHARD: Sub-Transformer Harnessing for Adaptive Resource-Aware Deployment"
+type: software
+authors:
+  - name: "TODO"
+repository-code: "https://github.com/sudaksh14/SHARD"
+license: Apache-2.0
+# TODO: add preferred-citation (paper title, authors, venue, year, DOI/link) when available.

@@ -1,0 +1,10 @@
+{
+  "_comment": "Settings of the reported PyTorch-eager runs (Original, Independent and eager SHARD rows).",
+  "method": "shard",
+  "backend": "pytorch",
+  "arch": "shard_vit",
+  "warmup": 20,
+  "runs": 100,
+  "interval": 0.1,
+  "cooldown": 2.0
+}
