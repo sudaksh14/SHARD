@@ -1,0 +1,22 @@
+# SHARD - single requirements file.
+# Python >= 3.8. Jetson benchmarks use Python 3.8 with NVIDIA's wheels.
+
+# --- core: models, Delta Runtime Manager, switching harness, evaluation, tests
+torch>=2.1               # Jetson: use NVIDIA's JetPack wheel (not on PyPI)
+torchvision>=0.16        # Jetson: use NVIDIA's JetPack wheel
+timm>=0.9
+numpy>=1.24
+tqdm>=4.60
+scikit-learn>=1.3        # accuracy computation in utils.evaluate_model
+torch-pruning>=1.3       # FLOPs / parameter counting
+pillow
+pytest>=7
+
+# --- Jetson benchmarks (utils/jetson_harness)
+onnx>=1.14               # ONNX export
+onnxruntime>=1.15        # Jetson: JetPack GPU build of ONNX Runtime 1.15.1 (not on PyPI)
+# jetson-stats           # jtop power source; Jetson only: sudo pip3 install jetson-stats
+
+# --- training (training/, main.py); needs a CUDA GPU (Linux, NCCL)
+pytorch-lightning>=2.0
+wandb>=0.19

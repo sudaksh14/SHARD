@@ -1,0 +1,13 @@
+{
+  "_comment": "Tiny, fast settings to exercise the harness on any machine (no Jetson needed). Not a measurement of the paper models.",
+  "method": "shard",
+  "backend": "pytorch",
+  "arch": "shard_vit",
+  "device": "cpu",
+  "tiny": true,
+  "warmup": 1,
+  "runs": 3,
+  "interval": 0.0,
+  "cooldown": 0.0,
+  "allow_missing_power": true
+}

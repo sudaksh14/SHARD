@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Local working data (see config/paths.py)
+.shard/
+.tmp/
+data/
+wandb/
+checkpoints/*.pt
+checkpoints/*.pth
+*.delta
+*.onnx
+
+# Benchmark output directories created by the Jetson scripts
+jetson_runs/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.claude/
+
+# Internal notes (not part of the public repository)
+audit/

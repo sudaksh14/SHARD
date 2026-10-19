@@ -1,0 +1,12 @@
+{
+  "_comment": "Measurement settings of the published Jetson Orin experiments (paper Sec. 4.1/4.4/4.5, Table 3). Settings of the reported ONNX Runtime measurements.",
+  "_paper_text": "Jetson Orin 8GB, 15W power mode, ONNX Runtime 1.15.1, fp32, batch size 1, no TensorRT; average over 100 runs after 20 warm-up inferences.",
+  "method": "shard",
+  "backend": "onnxruntime",
+  "arch": "shard_vit",
+  "warmup": 20,
+  "runs": 100,
+  "interval": 0.1,
+  "cooldown": 2.0,
+  "input_copy": "inside"
+}
